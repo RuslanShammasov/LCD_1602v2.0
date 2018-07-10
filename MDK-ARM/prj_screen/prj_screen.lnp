@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"prj_screen\startup_stm32f407xx.o"
+"prj_screen\stm32f4xx_hal_cortex.o"
+"prj_screen\stm32f4xx_hal_dma.o"
+"prj_screen\stm32f4xx_hal_flash_ex.o"
+"prj_screen\stm32f4xx_hal_dma_ex.o"
+"prj_screen\stm32f4xx_hal_rcc_ex.o"
+"prj_screen\stm32f4xx_hal_rcc.o"
+"prj_screen\stm32f4xx_hal_pwr_ex.o"
+"prj_screen\stm32f4xx_hal_flash.o"
+"prj_screen\stm32f4xx_hal_pwr.o"
+"prj_screen\stm32f4xx_hal_flash_ramfunc.o"
+"prj_screen\stm32f4xx_hal_gpio.o"
+"prj_screen\stm32f4xx_hal.o"
+"prj_screen\stm32f4xx_hal_tim_ex.o"
+"prj_screen\stm32f4xx_hal_tim.o"
+"prj_screen\stm32f4xx_hal_msp.o"
+"prj_screen\stm32f4xx_it.o"
+"prj_screen\main.o"
+"prj_screen\lcd.o"
+"prj_screen\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "prj_screen\prj_screen.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "prj_screen.map" -o prj_screen\prj_screen.axf
