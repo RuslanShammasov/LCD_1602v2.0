@@ -22,6 +22,8 @@ void LCD_set_Data(uint8_t data)
     if(((data)&0x01) == 1)   {d0_set();} else{d0_reset();}
 }
 
+//---WOHO!!!!!
+
 
 void LCD_Write_Data8(uint8_t dt)
 {
